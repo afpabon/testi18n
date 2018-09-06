@@ -1,0 +1,32 @@
+{
+  "name": "testi18n",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-plugin-react": "^7.11.1",
+    "i18next": "^11.7.0",
+    "i18next-browser-languagedetector": "^2.2.3",
+    "i18next-xhr-backend": "^1.5.1",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-i18next": "^7.11.1",
+    "react-scripts": "^1.1.5",
+    "simpl-schema": "^1.5.3"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
